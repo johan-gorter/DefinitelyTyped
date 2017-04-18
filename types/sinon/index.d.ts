@@ -260,6 +260,8 @@ declare namespace Sinon {
         setResponseBody(body: string): void;
         respond(status: number, headers: any, body: string): void;
         autoRespond(ms: number): void;
+        error(): void;
+        onerror(): void;
     }
 
     interface SinonFakeXMLHttpRequestStatic {
